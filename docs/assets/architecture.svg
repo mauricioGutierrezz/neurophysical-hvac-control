@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+<title id="title">Neurophysical HVAC Control — five-layer research design</title>
+<desc id="desc">A conceptual pipeline from physical observations through causal state, shared representations and coordinated decisions to constrained actions. The full architecture is proposed. No performance data are shown.</desc>
+<rect width="1200" height="480" rx="20" fill="#101e31"/>
+<path d="M44 76H1156" stroke="#30465e"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="44" y="49" fill="#70dec7" font-size="15" letter-spacing="3">SMART BUILDINGS / BUILDING THE ARCHITECTURE</text>
+<text x="44" y="139" fill="#f4f7fc" font-size="43" font-weight="700">Neurophysical HVAC Control</text>
+<text x="44" y="177" fill="#bbcbdf" font-size="20">One controller. Different buildings. Five connected blocks.</text>
+<rect x="44" y="221" width="212" height="132" rx="12" fill="#1b3048" stroke="#36516d"/>
+<text x="59" y="254" fill="#70dec7" font-size="23">01</text>
+<text x="59" y="288" fill="#f4f7fc" font-size="12" font-weight="700">PHYSICAL CONTRACT</text>
+<text x="59" y="320" fill="#bbcbdf" font-size="13">Units &amp; observations</text>
+<path d="M258 285h9m-4 -4 4 4-4 4" fill="none" stroke="#70dec7" stroke-width="2"/>
+<rect x="269" y="221" width="212" height="132" rx="12" fill="#1b3048" stroke="#36516d"/>
+<text x="284" y="254" fill="#70dec7" font-size="23">02</text>
+<text x="284" y="288" fill="#f4f7fc" font-size="12" font-weight="700">CAUSAL STATE</text>
+<text x="284" y="320" fill="#bbcbdf" font-size="13">History &amp; sent actions</text>
+<path d="M483 285h9m-4 -4 4 4-4 4" fill="none" stroke="#70dec7" stroke-width="2"/>
+<rect x="494" y="221" width="212" height="132" rx="12" fill="#1b3048" stroke="#36516d"/>
+<text x="509" y="254" fill="#70dec7" font-size="23">03</text>
+<text x="509" y="288" fill="#f4f7fc" font-size="12" font-weight="700">SHARED REPRESENTATION</text>
+<text x="509" y="320" fill="#bbcbdf" font-size="13">Zones / AHUs / water</text>
+<path d="M708 285h9m-4 -4 4 4-4 4" fill="none" stroke="#70dec7" stroke-width="2"/>
+<rect x="719" y="221" width="212" height="132" rx="12" fill="#1b3048" stroke="#36516d"/>
+<text x="734" y="254" fill="#70dec7" font-size="23">04</text>
+<text x="734" y="288" fill="#f4f7fc" font-size="12" font-weight="700">COORDINATED DECISIONS</text>
+<text x="734" y="320" fill="#bbcbdf" font-size="13">Local &amp; system demand</text>
+<path d="M933 285h9m-4 -4 4 4-4 4" fill="none" stroke="#70dec7" stroke-width="2"/>
+<rect x="944" y="221" width="212" height="132" rx="12" fill="#1b3048" stroke="#36516d"/>
+<text x="959" y="254" fill="#70dec7" font-size="23">05</text>
+<text x="959" y="288" fill="#f4f7fc" font-size="12" font-weight="700">CONSTRAINED ACTIONS</text>
+<text x="959" y="320" fill="#bbcbdf" font-size="13">Legal command interface</text>
+<path d="M1156 369v20H44v-20" stroke="#4d708a" fill="none" stroke-dasharray="5 5"/>
+<text x="600" y="414" text-anchor="middle" fill="#bbcbdf" font-size="14">Environment feedback returns as the next public observation.</text>
+<circle cx="50" cy="451" r="5" fill="#e8bc74"/>
+<text x="64" y="456" fill="#e8bc74" font-size="14">WORK IN PROGRESS · Working components, open questions and local experiments</text>
+</g></svg>
