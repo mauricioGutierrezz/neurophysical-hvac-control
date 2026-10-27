@@ -26,4 +26,4 @@ Record the environment version, episode horizon, policy version, seeds and compa
 
 ## Scope of this public artifact
 
-This repository documents the architecture and interpretation of evidence. It intentionally omits datasets, exact split assignments, tuning settings, trained weights, controller code and internal experiment artifacts. Its qualitative status statements are not a public replication package.
+This repository publishes the D2-BASE source and documents the architecture and evaluation principles. It omits datasets, exact split assignments, tuning settings, trained weights and internal experiment artifacts. It does not publish experiment outcomes and is not a public replication package.

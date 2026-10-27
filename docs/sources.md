@@ -11,12 +11,21 @@ Reviewed on **26 October 2026**. This is an independent research presentation; n
 - [Official starter kit](https://github.com/smart-buildings-2026/starter-kit): simulator, reference interface and baseline context.
 - [Starter-kit license](https://github.com/smart-buildings-2026/starter-kit/blob/main/LICENSE) and [attribution notice](https://github.com/smart-buildings-2026/starter-kit/blob/main/NOTICE): Apache-2.0 code licensing and acknowledgement of Google's Smart Buildings Simulator.
 
-Local research records were consulted to distinguish implemented components, local evaluations and proposals. Those records are retained privately and are not linked or redistributed here. The architecture diagram and explanatory prose were prepared for this showcase; no third-party figures or source-code excerpts are included.
+Local research records were consulted to distinguish implemented components, local evaluations and proposals. Those records are retained privately and are not linked or redistributed here. The architecture diagram and explanatory prose were prepared for this showcase; no third-party figures or simulator code are included. The D2-BASE policy and representation module are adapted from the author's research implementation.
 
 ## Disclosure boundary
 
-The inspected rules restrict redistribution of Competition Data. They also require public Competition Code sharing through the competition's Kaggle forum or notebooks. This documentary artifact includes neither. The rules do not provide an explicit approval of this particular showcase; its documentary scope is an interpretation of the inspected provisions, not organizer clearance. Any later code or data release needs a separate review against the then-current rules.
+The inspected competition rules restrict redistribution of Competition Data.
+They also require public Competition Code sharing through the competition's
+Kaggle forum or notebooks. The D2-BASE source should be treated as Competition
+Code for disclosure planning, even though this release contains no trained
+weights or competition data. A GitHub release alone does not satisfy the Kaggle
+sharing requirement. This statement is not organizer clearance; recheck the
+current rules before release.
 
-## Rights of this documentation
+## License
 
-No additional reuse license is granted with this draft. The starter kit's Apache-2.0 license applies to its own materials; it is not automatically the license of this independent documentation. A documentation license may be selected by the author before publication. No competition dataset, third-party code or trained model is sublicensed here.
+The author's original code, documentation and diagram in this repository use
+[Apache-2.0](../LICENSE). The official starter kit
+retains its own Apache-2.0 license and notices. No competition data or trained
+model is included or sublicensed here.

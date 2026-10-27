@@ -8,6 +8,27 @@ Buildings have different layouts, equipment and thermal behavior. A useful contr
 
 ![Five connected blocks: physical contract, causal state, shared representation, coordinated decisions and constrained actions.](docs/assets/architecture.svg)
 
+## Explore the D2-BASE policy architecture
+
+This repository includes the source of one implemented controller version,
+D2-BASE, alongside a small shared-representation module. D2-BASE combines
+causal HVAC features, shared neural encoders, zone/AHU/water action heads and a
+hard operational projection.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m neurophysical_hvac
+python -m unittest discover -s tests -v
+```
+
+The included example uses invented feature arrays and untrained random
+parameters. The policy source does not include trained weights; it requires a
+compatible parameter set to produce actions. The example and tests demonstrate
+software structure only, not control performance. This release contains no
+quantitative results. [Read the code walkthrough →](docs/code.md)
+
 ## Building the architecture, block by block
 
 ### 01 · Understand what the building is telling us
@@ -36,9 +57,9 @@ Translate the network’s outputs into the building’s permitted action interfa
 
 A shared neural baseline, physical feature processing, simple temporal state and constrained action outputs are implemented and have been evaluated locally. These pieces provide a working foundation for the broader five-block design.
 
-The experiments have also shaped what I haven’t kept. Adding more context and communication did not produce enough benefit in the local comparison. Improvements seen in one development case have not consistently carried over to others. That makes transfer a problem to investigate, not a result to claim.
+Other variants have also been implemented and evaluated locally. This public release does not disclose their outcomes.
 
-The complete architecture is still being developed. Recurrent memory and thermal relationships between neighboring zones remain research ideas. A reinforcement-learning mechanism has passed technical preflight checks, but has not established an improvement through real training rollouts.
+The broader architecture is still being developed. Recurrent memory and thermal relationships between neighboring zones remain research ideas. A reinforcement-learning mechanism is at the technical preflight stage; real training rollouts remain future work.
 
 [Progress and lessons →](docs/research-status.md)
 
@@ -52,4 +73,4 @@ The policy uses only information available at decision time. Experimental compar
 
 The goal is a compact, physically meaningful controller that can adapt to unfamiliar building structures. The next questions are whether better temporal state helps, whether coordination avoids conflicting actions, and whether thermal relationships add useful information beyond equipment connections.
 
-This repository shares the architecture and the thinking behind its construction. Competitive controller code, trained weights and experiment data remain private. It is an independent project; the simulator and reference interface come from the [official starter kit](https://github.com/smart-buildings-2026/starter-kit). [Sources and attribution →](docs/sources.md)
+This repository shares the D2-BASE policy source, a representation core and the thinking behind their construction. Trained weights, training implementation, experiment data and quantitative results are not included. The released policy requires externally supplied weights and should not be treated as a useful controller without them. It is an independent project; the simulator and reference interface come from the [official starter kit](https://github.com/smart-buildings-2026/starter-kit). [Sources and attribution →](docs/sources.md)

@@ -36,7 +36,7 @@ Two relationships must remain distinct: **HVAC incidence** describes which equip
 
 Produce local zone actions and shared equipment decisions within one hierarchical policy. Shared air supply means that a zone's preferred action can conflict with another zone's needs; local reheat also interacts with cooling and water-system operation.
 
-The implemented baseline has zone, AHU and water-system outputs. Context and same-step action-message variants were evaluated locally without earning promotion. Their result motivates careful ablation rather than a claim of solved energy coordination.
+The implemented D2-BASE policy has zone, AHU and water-system outputs. Related context and same-step action-message variants were also implemented and evaluated locally. Their outcomes are not part of this public release.
 
 **Evidence:** hierarchical outputs exist. Additional explicit coordination remains a research hypothesis; the full coordinated design is not validated.
 

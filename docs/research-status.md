@@ -2,7 +2,7 @@
 
 [Back to the project](../README.md)
 
-I’m building this architecture in pieces, using local experiments to decide what is worth keeping. This page describes the evidence reviewed on 26 October 2026.
+I’m building this architecture in pieces. This page separates implementation, local evaluation and research proposals. It intentionally does not publish experiment outcomes or numerical results.
 
 ## A working foundation
 
@@ -10,29 +10,28 @@ The current neural baseline shares representations across zones and air-handling
 
 This is a foundation for the five-block design, rather than a completed demonstration of the entire architecture. Handling different input and output sizes is not the same as controlling an unfamiliar building well.
 
-## What the experiments taught me
-
-**Representation matters, but local gains have limits.** A revised representation improved on an earlier neural reference in one known development case. It did not beat the conventional comparator there, and that experiment alone says little about transfer.
-
-**More communication does not automatically help.** Variants that added context and same-step action messages were evaluated but not retained. The communication variant also worsened comfort relative to the neural baseline in that comparison.
-
-**Imitation and control answer different questions.** Earlier transfer tests produced inconsistent benefits across the examined development cases. Matching a teacher more closely is not enough to establish better closed-loop behavior.
-
 ## What is still being explored
 
 | Direction | Where it stands |
 |---|---|
-| Shared encoders and simple causal history | Implemented and locally evaluated |
-| Additional context and action-message coordination | Evaluated locally; not retained |
-| Learning directly from control rewards | PPO mechanism implemented; technical preflight only, without real training collection or demonstrated control improvement |
+| D2-BASE shared encoders, causal history, policy heads and action projection | Implemented; locally evaluated; source included here without trained weights |
+| Additional context and action-message coordination | Implemented and locally evaluated in other private variants; not included here |
+| Learning directly from control rewards | PPO mechanism implemented; technical preflight only, without real training collection |
 | Richer recurrent memory | Proposed |
 | Thermal relationships between neighboring zones | Proposed |
 | Online thermal adaptation and specialized experts | Research ideas requiring separate justification |
 
-“Implemented” means code exists; “evaluated locally” means relevant local closed-loop records exist; “proposed” means a research idea. Technical checks establish whether a mechanism behaves as intended, not whether it learns a better policy.
+“Implemented” means code exists; “evaluated locally” means relevant local closed-loop records exist; “proposed” means a research idea. This page reports those status distinctions without disclosing outcomes. Technical checks establish whether a mechanism behaves as intended, not whether it learns a better policy.
 
 ## What would count as progress
 
 An added block should improve control beyond repeatedly used development cases, preserve comfort and justify its computational cost. Complete trajectories, appropriate comparators and controlled ablations matter more than a larger collection of modules.
 
-The reviewed local runs do not establish hidden-test generalization, a leaderboard result or real-building readiness. This public repository explains the design and lessons qualitatively; the private experiment artifacts are not a public replication package.
+This release publishes no experiment outcomes, scores, comparisons, or claims of hidden-test generalization. It is not a public replication package.
+
+## The public code
+
+The D2-BASE implementation is provided without trained weights. The synthetic
+example and tests exercise software structure only. They do not add evidence of
+trained control performance or complete the five-block research agenda. See the
+[code walkthrough](code.md).
